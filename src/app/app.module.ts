@@ -6,18 +6,20 @@ import { AppComponent } from './app.component';
 import { LoginModule } from './pages/login/login.module';
 import { RouterOutlet } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { MenuComponent } from './pages/menu/menu.component';
+import { MenuModule } from './pages/menu/menu.module';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
   ],
   imports: [
     BrowserModule,
     RouterOutlet,
     AppRoutingModule,
-    LoginModule
+    ComponentsModule,
+    LoginModule,
+    MenuModule
   ],
   providers: [
     provideAnimationsAsync('noop')
