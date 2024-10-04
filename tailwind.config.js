@@ -11,7 +11,8 @@ module.exports = {
         "gray-login-button": "#2F3538"
       },
       fontFamily: {
-        'login-label-input': ['"Zen Kaku Gothic Antique"', 'sans-serif'],
+        'zen-kaku': ['"Zen Kaku Gothic Antique"', 'sans-serif'],
+        'popins': [ "'Poppins'",'sans-serif']
       },
     },
   },

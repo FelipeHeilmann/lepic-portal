@@ -10,11 +10,11 @@
         <h1 class="text-3xl">Portal do NV MVR</h1>
         <form [formGroup]="form" (ngSubmit)="login()" class="flex flex-col gap-2">
           <div class="flex flex-col">
-            <label for="rm" class="text-sm font-login-label-input font-medium">RM</label>
+            <label for="rm" class="text-sm font-zen-kaku font-medium">RM</label>
             <input id="rm" class="p-1 rounded-lg bg-gray-input" type="text" formControlName="rm">
           </div>
           <div class="flex flex-col">
-            <label for="passowrd" class="text-sm font-login-label-input font-medium">Senha</label>
+            <label for="passowrd" class="text-sm font-zen-kaku font-medium">Senha</label>
             <div class="relative">
               <input id="passowrd" class="p-1 w-full rounded-lg bg-gray-input" [type]="!passwordVisibility ? 'password' : 'text'" formControlName="password">
               <button type="button" class="absolute top-[7px] right-1" (click)="togglePasswordVisibility()">
