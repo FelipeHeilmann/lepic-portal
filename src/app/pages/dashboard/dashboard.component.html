@@ -1,0 +1,32 @@
+<main class="w-full h-full ml-10">
+    <section class="w-[75vw] flex flex-col gap-3 h-full">
+        <div class="w-full flex items-center pl-2 h-20 rounded-xl bg-gradient-to-r from-[#4169E1] to-[#A9C8FF]">
+            <h1 class="text-xl text-white font-semibold font-popins">Progresso</h1>
+        </div>
+        <div>
+            <h2 class="font-popins text-xl font-semibold">Cortes</h2>
+            <apx-chart
+                [series]="cuttingSeries"
+                [chart]="chartOptions.chart"
+                [xaxis]="chartOptions.xaxis"
+                [title]="chartOptions.title"
+                [colors]="chartOptions.colors"
+                [dataLabels]="chartOptions.dataLabels"
+                [stroke]="chartOptions.stroke"
+            ></apx-chart>
+        </div>
+
+        <div>
+            <h2 class="font-popins text-xl font-semibold">Sutura</h2>
+            <apx-chart
+                [series]="suturingSeries"
+                [chart]="chartOptions.chart"
+                [xaxis]="chartOptions.xaxis"
+                [title]="chartOptions.title"
+                [colors]="chartOptions.colors"
+                [dataLabels]="chartOptions.dataLabels"
+                [stroke]="chartOptions.stroke"
+            ></apx-chart>
+        </div>
+    </section>
+</main>

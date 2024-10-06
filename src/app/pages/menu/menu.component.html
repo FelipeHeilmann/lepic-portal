@@ -1,8 +1,8 @@
-<section class="w-full h-full ml-5">
-  <div class="w-[75vw]">
+<main class="w-full h-full ml-5">
+  <section class="w-[75vw]">
     <div class="w-full flex justify-between bg-gradient-to-r rounded-xl from-[#4169E1] to-[#2A52BE]">
       <div class="flex flex-col w-1/2 justify-between py-5 pl-10">
-        <span class="text-sm text-white font-popins font-light">10 de junho, 2024</span>
+        <span class="text-sm text-white font-popins font-light">{{ currentDate | date: 'd \'de\' MMMM \',\' y' }}</span>
         <div>
           <h1 class="font-medium text-xl font-popins text-white">Bem vindo, John!</h1>
           <span class="text-sm font-popins text-white font-light">Esteja sempre atualizado no portal</span>
@@ -10,21 +10,21 @@
       </div>
       <img src="assets/banner.png" alt="imagem de um estudante">
     </div>
-  </div>
-  <div class="w-[80vw] flex mt-10">
+  </section>
+  <section class="w-[80vw] flex mt-10">
     <div class="w-3/5 flex flex-col gap-9">
       <div class="w-full flex flex-col gap-2">
         <h2 class="font-semibold">Gestão</h2>
         <div class="w-full flex gap-8">
-          <figure class="w-40 h-40 rounded-xl flex flex-col justify-center items-center shadow-lg">
+          <figure class="w-40 h-40 rounded-xl transition-all cursor-pointer hover:border-4 hover:border-[#4169E1] flex flex-col justify-center items-center shadow-lg">
             <img src="assets/megaphone.png" alt="megafone">
             <caption class="relative top-4">Avisos</caption>
           </figure>
-          <figure class="w-40 h-40 rounded-xl flex flex-col justify-center items-center shadow-lg">
+          <figure class="w-40 h-40 rounded-xl transition-all cursor-pointer hover:border-4 hover:border-[#4169E1] flex flex-col justify-center items-center shadow-lg">
             <img src="assets/alert-menu.png" alt="alerta">
             <caption class="relative -top-6">Pendências</caption>
           </figure>
-          <figure class="w-40 h-40 rounded-xl flex flex-col justify-center items-center shadow-lg">
+          <figure class="w-40 h-40 rounded-xl transition-all cursor-pointer hover:border-4 hover:border-[#4169E1] flex flex-col justify-center items-center shadow-lg">
             <img src="assets/chart-menu.png" alt="grafico">
             <caption class="relative top-4">Progreso</caption>
           </figure>
@@ -33,14 +33,14 @@
       <div class="w-full flex flex-col gap-2">
         <h2 class="font-semibold">Proximos jogos</h2>
         <div class="w-full flex gap-8">
-          <figure class="w-[16rem] h-32 rounded-xl bg-[#A9C8FF] bg-opacity-20 flex justify-between items-center shadow-lg px-1">
+          <figure class="w-[16rem] h-32 rounded-xl bg-[#A9C8FF] bg-opacity-20 transition-all cursor-pointer hover:border-4 hover:border-[#4169E1] flex justify-between items-center shadow-lg px-1">
             <div class="flex flex-col justify-between items-center p-5">
               <span>Jogo A</span>
               <button class="w-28 p-1 text-white rounded-xl bg-[#4169E1]">Ver</button>
             </div>
             <img src="assets/computer.png" alt="computador">
           </figure>
-          <figure class="w-[16rem] h-32 rounded-xl bg-[#A9C8FF] bg-opacity-20 flex justify-between items-center shadow-lg px-1">
+          <figure class="w-[16rem] h-32 rounded-xl bg-[#A9C8FF] bg-opacity-20 transition-all cursor-pointer hover:border-4 hover:border-[#4169E1] flex justify-between items-center shadow-lg px-1">
             <div class="flex flex-col justify-between items-center p-5">
               <span>Jogo B</span>
               <button class="w-28 p-1 text-white rounded-xl bg-[#4169E1]">Ver</button>
@@ -80,5 +80,5 @@
         </div>
       </article>
     </div>
-  </div>
-</section>
+  </section>
+</main>
