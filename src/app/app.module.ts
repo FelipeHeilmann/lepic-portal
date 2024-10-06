@@ -11,6 +11,8 @@ import { ComponentsModule } from './components/components.module';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
+import { PendencyModule } from './pages/pendency/pendency.module';
+
 registerLocaleData(localePt)
 
 @NgModule({
@@ -24,7 +26,8 @@ registerLocaleData(localePt)
     ComponentsModule,
     LoginModule,
     MenuModule,
-    DashboardModule
+    DashboardModule,
+    PendencyModule
   ],
   providers: [
     provideAnimationsAsync('noop'),

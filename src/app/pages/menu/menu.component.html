@@ -20,11 +20,11 @@
             <img src="assets/megaphone.png" alt="megafone">
             <caption class="relative top-4">Avisos</caption>
           </figure>
-          <figure class="w-40 h-40 rounded-xl transition-all cursor-pointer hover:border-4 hover:border-[#4169E1] flex flex-col justify-center items-center shadow-lg">
+          <figure (click)="navigate('/pendencias')" class="w-40 h-40 rounded-xl transition-all cursor-pointer hover:border-4 hover:border-[#4169E1] flex flex-col justify-center items-center shadow-lg">
             <img src="assets/alert-menu.png" alt="alerta">
             <caption class="relative -top-6">Pendências</caption>
           </figure>
-          <figure class="w-40 h-40 rounded-xl transition-all cursor-pointer hover:border-4 hover:border-[#4169E1] flex flex-col justify-center items-center shadow-lg">
+          <figure (click)="navigate('/dashboard')" class="w-40 h-40 rounded-xl transition-all cursor-pointer hover:border-4 hover:border-[#4169E1] flex flex-col justify-center items-center shadow-lg">
             <img src="assets/chart-menu.png" alt="grafico">
             <caption class="relative top-4">Progreso</caption>
           </figure>
